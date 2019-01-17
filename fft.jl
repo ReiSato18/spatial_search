@@ -34,9 +34,9 @@ println(" fs=",half_fs[top5]," value=",half_f_abs[top5],"\n"," fs=",half_fs[top6
 
 #p_max
 Q = 727
-function p_max(Q)
+function p_max(Q,time)
     each_p_max = 0
-    for i = 1 : div(8000,Q)
+    for i = 1 : div(time,Q)
         if i == 1
             each_p_max += maximum(prob3_m_4_2[1:Q])
         else
