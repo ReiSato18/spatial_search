@@ -1,26 +1,14 @@
-C = [-1/2 1/2 1/2 1/2;
-    1/2 -1/2 1/2 1/2;
-    1/2 1/2 -1/2 1/2;
-    1/2 1/2 1/2 -1/2]
-
+C = [-1/2 1/2 1/2 1/2;1/2 -1/2 1/2 1/2;1/2 1/2 -1/2 1/2;1/2 1/2 1/2 -1/2]
 #flip_flop
-right_f = zeros(Float64,4,4)
-right_f[2,:] = C[1,:]
-left_f = zeros(Float64,4,4) 
-left_f[1,:] = C[2,:]
-up_f = zeros(Float64,4,4)
-up_f[4,:]  = C[3,:]
-down_f = zeros(Float64,4,4)
-down_f[3,:]  = C[4,:]
+right_f = zeros(Float64,4,4);right_f[2,:] = C[1,:]
+left_f = zeros(Float64,4,4);left_f[1,:] = C[2,:]
+up_f = zeros(Float64,4,4);up_f[4,:]  = C[3,:]
+down_f = zeros(Float64,4,4);down_f[3,:]  = C[4,:]
 ###move shift
-right_m = zeros(Float64,4,4)
-right_m[1,:] = C[1,:]
-left_m = zeros(Float64,4,4) 
-left_m[2,:] = C[2,:]
-up_m = zeros(Float64,4,4)
-up_m[3,:]  = C[3,:]
-down_m = zeros(Float64,4,4)
-down_m[4,:]  = C[4,:]
+right_m = zeros(Float64,4,4);right_m[1,:] = C[1,:]
+left_m = zeros(Float64,4,4);left_m[2,:] = C[2,:]
+up_m = zeros(Float64,4,4);up_m[3,:]  = C[3,:]
+down_m = zeros(Float64,4,4);down_m[4,:]  = C[4,:]
 ##########################
 
 using ProgressMeter
